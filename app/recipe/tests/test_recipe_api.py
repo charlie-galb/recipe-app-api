@@ -139,7 +139,7 @@ class PrivateRecipeApiTests(TestCase):
         self.assertIn(tag1, tags)
         self.assertIn(tag2, tags)
 
-    def tet_create_recipe_with_ingredients(self):
+    def test_create_recipe_with_ingredients(self):
         """Test creating a recipe with ingredients"""
         ingredient1 = sample_ingredient(user=self.user, name='Fish sauce')
         ingredient2 = sample_ingredient(user=self.user, name='Coconut milk')
